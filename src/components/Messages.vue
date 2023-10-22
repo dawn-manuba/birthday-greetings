@@ -29,66 +29,96 @@
                         <el-timeline class="messages_timeline"
                                      v-show="showTimeline">
 
-                            <el-timeline-item timestamp="Say something here ..." placement="top">
+                            <el-timeline-item placement="top">
                                 <el-card>
                                     <el-image :src="img1" @load="onImgLoad"></el-image>
                                 </el-card>
                             </el-timeline-item>
 
-                            <el-timeline-item>
-                                <el-card>
-                                    <h3>Say something here ...</h3>
-                                </el-card>
-                            </el-timeline-item>
+<!--                            <el-timeline-item>-->
+<!--                                <el-card>-->
+<!--                                    <h3>Say something here ...</h3>-->
+<!--                                </el-card>-->
+<!--                            </el-timeline-item>-->
 
-                            <el-timeline-item timestamp="Say something here ..." placement="top">
+                            <el-timeline-item placement="top">
                                 <el-card>
                                     <el-image :src="img2" @load="onImgLoad"></el-image>
                                 </el-card>
                             </el-timeline-item>
 
-                            <el-timeline-item timestamp="Say something here ..." placement="top">
+                            <el-timeline-item placement="top">
                                 <el-card>
                                     <el-image :src="img3" @load="onImgLoad"></el-image>
                                 </el-card>
                             </el-timeline-item>
 
-                            <el-timeline-item placement="top">
-                                <el-card>
-                                    <h3>Say something here ...</h3>
-                                </el-card>
-                            </el-timeline-item>
+<!--                            <el-timeline-item placement="top">-->
+<!--                                <el-card>-->
+<!--                                    <h3>Say something here ...</h3>-->
+<!--                                </el-card>-->
+<!--                            </el-timeline-item>-->
 
                             <el-timeline-item>
                                 <el-card>
                                     <el-image :src="img4" @load="onImgLoad"></el-image>
-                                    <h3>Say something here ...</h3>
+<!--                                    <h3>Say something here ...</h3>-->
                                 </el-card>
                             </el-timeline-item>
 
-                            <el-timeline-item timestamp="Say something here ..." placement="top">
-                                <el-card>
-                                    <h3>Say something here ...</h3>
-                                </el-card>
-                            </el-timeline-item>
+<!--                            <el-timeline-item timestamp="Say something here ..." placement="top">-->
+<!--                                <el-card>-->
+<!--                                    <h3>Say something here ...</h3>-->
+<!--                                </el-card>-->
+<!--                            </el-timeline-item>-->
 
-                            <el-timeline-item timestamp="Say something here ..." placement="top">
+                            <el-timeline-item placement="top">
                                 <el-card>
                                     <el-image :src="img5" @load="onImgLoad"></el-image>
                                 </el-card>
                             </el-timeline-item>
 
-                            <el-timeline-item timestamp="Love, YourName." placement="top">
+                            <el-timeline-item placement="top">
                                 <el-card>
                                     <el-image :src="img6" @load="onImgLoad"></el-image>
                                 </el-card>
                             </el-timeline-item>
 
-                            <el-timeline-item>
+                          <el-timeline-item placement="top">
                                 <el-card>
-                                    <h3>To be continued...</h3>
+                                    <el-image :src="img7" @load="onImgLoad"></el-image>
                                 </el-card>
                             </el-timeline-item>
+
+                          <el-timeline-item placement="top">
+                                <el-card>
+                                    <el-image :src="img8" @load="onImgLoad"></el-image>
+                                </el-card>
+                            </el-timeline-item>
+
+                          <el-timeline-item placement="top">
+                                <el-card>
+                                    <el-image :src="img9" @load="onImgLoad"></el-image>
+                                </el-card>
+                            </el-timeline-item>
+
+                          <el-timeline-item placement="top">
+                                <el-card>
+                                    <el-image :src="img10" @load="onImgLoad"></el-image>
+                                </el-card>
+                            </el-timeline-item>
+
+                          <el-timeline-item placement="top">
+                                <el-card>
+                                    <el-image :src="img11" @load="onImgLoad"></el-image>
+                                </el-card>
+                            </el-timeline-item>
+
+<!--                            <el-timeline-item>-->
+<!--                                <el-card>-->
+<!--                                    <h3>To be continued...</h3>-->
+<!--                                </el-card>-->
+<!--                            </el-timeline-item>-->
 
                         </el-timeline>
                     </transition>
@@ -105,12 +135,17 @@
     import 'vue-loading-overlay/dist/vue-loading.css';
     // Images
     // TODO : Put your images in /src/assets, and import them accordingly.
-    import img1 from '../assets/just_grey0.jpg'
-    import img2 from '../assets/just_grey1.jpg'
-    import img3 from '../assets/just_grey2.jpg'
-    import img4 from '../assets/just_grey3.jpg'
-    import img5 from '../assets/just_grey4.jpg'
-    import img6 from '../assets/just_grey5.jpg'
+    import img1 from '../assets/img.jpg'
+    import img2 from '../assets/img1.jpg'
+    import img3 from '../assets/img2.jpg'
+    import img4 from '../assets/img3.jpg'
+    import img5 from '../assets/img4.jpg'
+    import img6 from '../assets/img5.jpg'
+    import img7 from '../assets/img6.jpg'
+    import img8 from '../assets/img7.jpg'
+    import img9 from '../assets/img8.jpg'
+    import img10 from '../assets/img9.jpg'
+    import img11 from '../assets/img10.jpg'
 
     export default {
         name: "Messages",
@@ -126,6 +161,11 @@
                 img4: img4,
                 img5: img5,
                 img6: img6,
+                img7: img7,
+                img8: img8,
+                img9: img9,
+                img10: img10,
+                img11: img11,
                 imagesLoaded: 0,
                 // TODO : Modify this number (totalImages) to the images you use in the content
                 totalImages : 6,

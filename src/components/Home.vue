@@ -39,16 +39,16 @@
                 </el-row>
 
                 <!-- Video -->
-                <el-row type="flex" class="button_row" justify="center">
-                    <el-col :xs="16" :sm="16" :md="12" :lg="6" :xl="6">
-                        <transition name="slide-fade">
-                            <el-button @click="goVideo()" class="home_button" plain type="danger"
-                                       icon="el-icon-sugar" v-if="showButtons">
-                                Video
-                            </el-button>
-                        </transition>
-                    </el-col>
-                </el-row>
+<!--                <el-row type="flex" class="button_row" justify="center">-->
+<!--                    <el-col :xs="16" :sm="16" :md="12" :lg="6" :xl="6">-->
+<!--                        <transition name="slide-fade">-->
+<!--                            <el-button @click="goVideo()" class="home_button" plain type="danger"-->
+<!--                                       icon="el-icon-sugar" v-if="showButtons">-->
+<!--                                Video-->
+<!--                            </el-button>-->
+<!--                        </transition>-->
+<!--                    </el-col>-->
+<!--                </el-row>-->
 
                 <!-- Stories Behind -->
                 <el-row type="flex" class="button_row" justify="center">
