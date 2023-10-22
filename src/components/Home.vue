@@ -6,7 +6,7 @@
             <el-main class="home_content">
 
                 <!-- Birthday cake -->
-                <el-row :gutter="10" type="flex" class="home_row cake_row" justify="center">
+                <el-row :gutter="10" type="flex" class="home_row cake_row" justify="center" style="margin-top: 50px">
                     <el-col :xs="20" :sm="16" :md="12" :lg="6" :xl="6">
                         <transition name="slide-fade">
                             <div class="cake" v-if="showCake">
